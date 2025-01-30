@@ -8,7 +8,7 @@ server.use(cors());
 server.use(express.json()); 
 
 
-const mongoURI = process.env.mongo_uri;
+const mongoURI = process.env.mongo_URI;
 
 if (!mongoURI) {
   console.error('MongoDB URI is not defined in the .env file.');
